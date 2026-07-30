@@ -1,13 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Hero.css';
 
+const heroImages = [
+  '/assets/cropped/hero.png'
+];
+
 const Hero = ({ setCurrentPage }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev === 0 ? heroImages.length - 1 : prev - 1));
+  };
+
+  useEffect(() => {
+    if (heroImages.length > 1) {
+      const interval = setInterval(nextImage, 5000); // Auto slide every 5 seconds
+      return () => clearInterval(interval);
+    }
+  }, []);
+
   return (
     <section className="hero-section">
-      <div className="hero-bg">
-         <img src="/assets/cropped/hero.png" alt="Aurora Cafe Interior" />
-         <div className="hero-overlay"></div>
-      </div>
+      {heroImages.map((img, index) => (
+        <div 
+          key={img}
+          className={`hero-bg ${index === currentImageIndex ? 'active' : ''}`}
+          style={{ opacity: index === currentImageIndex ? 1 : 0, transition: 'opacity 1s ease-in-out' }}
+        >
+           <img src={img} alt="Aurora Cafe Interior" />
+           <div className="hero-overlay"></div>
+        </div>
+      ))}
       
       <div className="container hero-content">
         <span className="subtitle">GOOD COFFEE, GREAT MOMENTS</span>
@@ -37,12 +64,29 @@ const Hero = ({ setCurrentPage }) => {
           </button>
         </div>
         
-        <div className="carousel-indicators">
-          <span className="indicator active"></span>
-          <span className="indicator line"></span>
-          <span className="indicator line"></span>
-          <span className="indicator line"></span>
-        </div>
+        {heroImages.length > 1 && (
+          <div className="slider-controls">
+            <button className="slide-btn prev" onClick={prevImage} aria-label="Previous image">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+               </svg>
+            </button>
+            <div className="carousel-indicators">
+              {heroImages.map((_, index) => (
+                <span 
+                  key={index} 
+                  className={`indicator ${index === currentImageIndex ? 'active' : 'line'}`}
+                  onClick={() => setCurrentImageIndex(index)}
+                ></span>
+              ))}
+            </div>
+            <button className="slide-btn next" onClick={nextImage} aria-label="Next image">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+               </svg>
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

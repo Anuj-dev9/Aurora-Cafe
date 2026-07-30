@@ -6,34 +6,34 @@ const PopularPicks = ({ setCurrentPage }) => {
   const { addToCart } = useCart();
   const items = [
     {
-      id: 1,
+      id: 'c1',
       image: '/assets/latte_1784909179484.png',
-      name: 'Aurora Latte',
-      price: '₹5.20'
+      name: 'Cappuccino',
+      price: '₹150'
     },
     {
-      id: 2,
+      id: 'c2',
       image: '/assets/cold_brew_1784909191364.png',
-      name: 'Caramel Cold Brew',
-      price: '₹5.60'
+      name: 'Iced Latte',
+      price: '₹180'
     },
     {
-      id: 3,
-      image: '/assets/mocha_1784909204523.png',
-      name: 'Mocha Delight',
-      price: '₹5.40'
+      id: 'c5',
+      image: '/assets/flat_white_1784929444560.png',
+      name: 'Flat White',
+      price: '₹170'
     },
     {
-      id: 4,
+      id: 'd2',
       image: '/assets/cheesecake_1784909217833.png',
-      name: 'Pistachio Cheesecake',
-      price: '₹6.30'
+      name: 'Cheesecake',
+      price: '₹220'
     },
     {
-      id: 5,
-      image: '/assets/croissant_1784909233340.png',
-      name: 'Almond Croissant',
-      price: '₹4.10'
+      id: 'f4',
+      image: '/assets/breakfast_croissant_1784929522475.png',
+      name: 'Breakfast Croissant',
+      price: '₹180'
     }
   ];
 

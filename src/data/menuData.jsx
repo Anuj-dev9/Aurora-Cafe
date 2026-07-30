@@ -13,12 +13,12 @@ export const menuData = [
       </svg>
     ),
     items: [
-      { id: 'c1', name: 'Cappuccino', desc: 'Rich espresso with steamed milk and a layer of foamed milk.', price: '₹.50', image: '/assets/latte_1784909179484.png', popular: true },
-      { id: 'c2', name: 'Iced Latte', desc: 'Smooth espresso blended with cold milk and ice.', price: '₹.80', image: '/assets/cold_brew_1784909191364.png' },
-      { id: 'c3', name: 'Espresso', desc: 'Strong and bold single shot of pure espresso.', price: '₹.00', image: '/assets/mocha_1784909204523.png' },
-      { id: 'c4', name: 'Mocha', desc: 'Espresso with chocolate, steamed milk, and a touch of cocoa.', price: '₹.20', image: '/assets/latte_1784909179484.png' },
-      { id: 'c5', name: 'Flat White', desc: 'Smooth espresso with velvety steamed milk.', price: '₹.50', image: '/assets/flat_white_1784929444560.png' },
-      { id: 'c6', name: 'Caramel Macchiato', desc: 'Espresso with vanilla syrup, steamed milk and caramel drizzle.', price: '₹.50', image: '/assets/caramel_macchiato_1784929455041.png' }
+      { id: 'c1', name: 'Cappuccino', desc: 'Rich espresso with steamed milk and a layer of foamed milk.', price: '₹150', image: '/assets/latte_1784909179484.png', popular: true },
+      { id: 'c2', name: 'Iced Latte', desc: 'Smooth espresso blended with cold milk and ice.', price: '₹180', image: '/assets/cold_brew_1784909191364.png' },
+      { id: 'c3', name: 'Espresso', desc: 'Strong and bold single shot of pure espresso.', price: '₹100', image: '/assets/mocha_1784909204523.png' },
+      { id: 'c4', name: 'Mocha', desc: 'Espresso with chocolate, steamed milk, and a touch of cocoa.', price: '₹160', image: '/assets/latte_1784909179484.png' },
+      { id: 'c5', name: 'Flat White', desc: 'Smooth espresso with velvety steamed milk.', price: '₹170', image: '/assets/flat_white_1784929444560.png' },
+      { id: 'c6', name: 'Caramel Macchiato', desc: 'Espresso with vanilla syrup, steamed milk and caramel drizzle.', price: '₹200', image: '/assets/caramel_macchiato_1784929455041.png' }
     ]
   },
   {
@@ -30,10 +30,10 @@ export const menuData = [
       </svg>
     ),
     items: [
-      { id: 'nc1', name: 'Matcha Latte', desc: 'Premium matcha blended with steamed milk.', price: '₹.90', image: '/assets/cheesecake_1784909217833.png' },
-      { id: 'nc2', name: 'Hot Chocolate', desc: 'Rich chocolate blended with steamed milk.', price: '₹.50', image: '/assets/mocha_1784909204523.png' },
-      { id: 'nc3', name: 'Chai Tea Latte', desc: 'Spiced black tea blended with steamed milk.', price: '₹.80', image: '/assets/chai_tea_latte_1784929464327.png' },
-      { id: 'nc4', name: 'Strawberry Smoothie', desc: 'Fresh strawberries blended with yogurt and honey.', price: '₹.50', image: '/assets/strawberry_smoothie_1784929475341.png' }
+      { id: 'nc1', name: 'Matcha Latte', desc: 'Premium matcha blended with steamed milk.', price: '₹220', image: '/assets/cheesecake_1784909217833.png' },
+      { id: 'nc2', name: 'Hot Chocolate', desc: 'Rich chocolate blended with steamed milk.', price: '₹180', image: '/assets/mocha_1784909204523.png' },
+      { id: 'nc3', name: 'Chai Tea Latte', desc: 'Spiced black tea blended with steamed milk.', price: '₹150', image: '/assets/chai_tea_latte_1784929464327.png' },
+      { id: 'nc4', name: 'Strawberry Smoothie', desc: 'Fresh strawberries blended with yogurt and honey.', price: '₹200', image: '/assets/strawberry_smoothie_1784929475341.png' }
     ]
   },
   {
@@ -47,10 +47,10 @@ export const menuData = [
       </svg>
     ),
     items: [
-      { id: 't1', name: 'English Breakfast', desc: 'Classic black tea with a rich and robust flavor.', price: '₹.50', image: '/assets/cold_brew_1784909191364.png' },
-      { id: 't2', name: 'Chamomile Tea', desc: 'Calming herbal tea made from sweet chamomile flowers.', price: '₹.50', image: '/assets/latte_1784909179484.png' },
-      { id: 't3', name: 'Green Tea', desc: 'Light and refreshing traditional green tea.', price: '₹.20', image: '/assets/green_tea_1784929485519.png' },
-      { id: 't4', name: 'Earl Grey', desc: 'Black tea infused with fragrant bergamot oil.', price: '₹.50', image: '/assets/earl_grey_1784929495194.png' }
+      { id: 't1', name: 'English Breakfast', desc: 'Classic black tea with a rich and robust flavor.', price: '₹120', image: '/assets/cold_brew_1784909191364.png' },
+      { id: 't2', name: 'Chamomile Tea', desc: 'Calming herbal tea made from sweet chamomile flowers.', price: '₹140', image: '/assets/latte_1784909179484.png' },
+      { id: 't3', name: 'Green Tea', desc: 'Light and refreshing traditional green tea.', price: '₹110', image: '/assets/green_tea_1784929485519.png' },
+      { id: 't4', name: 'Earl Grey', desc: 'Black tea infused with fragrant bergamot oil.', price: '₹130', image: '/assets/earl_grey_1784929495194.png' }
     ]
   },
   {
@@ -63,10 +63,10 @@ export const menuData = [
       </svg>
     ),
     items: [
-      { id: 'f1', name: 'Grilled Sandwich', desc: 'Toasted sandwich with fresh veggies, cheese and our special sauce.', price: '₹.50', image: '/assets/croissant_1784909233340.png' },
-      { id: 'f2', name: 'Chicken Wrap', desc: 'Grilled chicken wrap with greens and homemade dressing.', price: '₹.20', image: '/assets/cheesecake_1784909217833.png' },
-      { id: 'f3', name: 'Avocado Toast', desc: 'Mashed avocado on sourdough bread with cherry tomatoes.', price: '₹.50', image: '/assets/avocado_toast_1784929509510.png' },
-      { id: 'f4', name: 'Breakfast Croissant', desc: 'Flaky butter croissant filled with egg and cheese.', price: '₹.50', image: '/assets/breakfast_croissant_1784929522475.png' }
+      { id: 'f1', name: 'Grilled Sandwich', desc: 'Toasted sandwich with fresh veggies, cheese and our special sauce.', price: '₹160', image: '/assets/croissant_1784909233340.png' },
+      { id: 'f2', name: 'Chicken Wrap', desc: 'Grilled chicken wrap with greens and homemade dressing.', price: '₹220', image: '/assets/cheesecake_1784909217833.png' },
+      { id: 'f3', name: 'Avocado Toast', desc: 'Mashed avocado on sourdough bread with cherry tomatoes.', price: '₹250', image: '/assets/avocado_toast_1784929509510.png' },
+      { id: 'f4', name: 'Breakfast Croissant', desc: 'Flaky butter croissant filled with egg and cheese.', price: '₹180', image: '/assets/breakfast_croissant_1784929522475.png' }
     ]
   },
   {
@@ -83,10 +83,10 @@ export const menuData = [
       </svg>
     ),
     items: [
-      { id: 'd1', name: 'Chocolate Brownie', desc: 'Warm brownie served with chocolate sauce.', price: '₹.50', image: '/assets/mocha_1784909204523.png' },
-      { id: 'd2', name: 'Cheesecake', desc: 'Creamy cheesecake with a rich berry compote.', price: '₹.50', image: '/assets/cheesecake_1784909217833.png' },
-      { id: 'd3', name: 'Tiramisu', desc: 'Classic Italian dessert with coffee-soaked ladyfingers and mascarpone.', price: '₹.00', image: '/assets/tiramisu_1784929531808.png' },
-      { id: 'd4', name: 'Lemon Tart', desc: 'Zesty lemon curd in a buttery pastry shell.', price: '₹.20', image: '/assets/lemon_tart_1784929541611.png' }
+      { id: 'd1', name: 'Chocolate Brownie', desc: 'Warm brownie served with chocolate sauce.', price: '₹150', image: '/assets/mocha_1784909204523.png' },
+      { id: 'd2', name: 'Cheesecake', desc: 'Creamy cheesecake with a rich berry compote.', price: '₹220', image: '/assets/cheesecake_1784909217833.png' },
+      { id: 'd3', name: 'Tiramisu', desc: 'Classic Italian dessert with coffee-soaked ladyfingers and mascarpone.', price: '₹240', image: '/assets/tiramisu_1784929531808.png' },
+      { id: 'd4', name: 'Lemon Tart', desc: 'Zesty lemon curd in a buttery pastry shell.', price: '₹180', image: '/assets/lemon_tart_1784929541611.png' }
     ]
   }
 ];
