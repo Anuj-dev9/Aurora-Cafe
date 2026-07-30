@@ -33,7 +33,7 @@ const Contact = () => {
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                   <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
-                <h3 style={{ color: '#fff', fontSize: '1.5rem', marginBottom: '0.5rem', fontFamily: 'var(--font-serif)' }}>Message Sent!</h3>
+                <h2 style={{ color: '#fff', fontSize: '1.5rem', marginBottom: '0.5rem', fontFamily: 'var(--font-serif)' }}>Message Sent!</h2>
                 <p style={{ color: 'var(--text-secondary)' }}>Thank you for reaching out. We will get back to you shortly.</p>
               </div>
             ) : (
@@ -68,7 +68,7 @@ const Contact = () => {
           
           <div className="contact-info">
             <div className="info-card">
-              <h3>Contact Details</h3>
+              <h2>Contact Details</h2>
               <div className="info-row">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" strokeWidth="2">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -85,7 +85,7 @@ const Contact = () => {
             </div>
             
             <div className="info-card">
-              <h3>Follow Us</h3>
+              <h2>Follow Us</h2>
               <div className="social-links">
                 <a href="#" className="social-icon">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -105,7 +105,7 @@ const Contact = () => {
             </div>
             
             <div className="info-card image-card">
-              <img src="/assets/cropped/hero.png" alt="Aurora Cafe" />
+              <img src="/assets/cropped/hero.webp" alt="Aurora Cafe" width="600" height="800" loading="lazy" />
             </div>
           </div>
         </div>

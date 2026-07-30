@@ -71,7 +71,7 @@ const Menu = () => {
                 {section.items.map(item => (
                   <div className="menu-item-card" key={item.id}>
                     <div className="menu-item-image">
-                      <img src={item.image} alt={item.name} />
+                      <img src={item.image} alt={item.name} width="400" height="400" loading="lazy" />
                     </div>
                     <div className="menu-item-content">
                       <div>
@@ -83,7 +83,7 @@ const Menu = () => {
                       </div>
                       <div className="menu-item-footer">
                         <span className="menu-item-price">{item.price}</span>
-                        <button className="add-icon-btn" onClick={() => addToCart(item)}>
+                        <button className="add-icon-btn" onClick={() => addToCart(item)} aria-label={`Add ${item.name} to cart`}>
                           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                             <line x1="12" y1="5" x2="12" y2="19"></line>
                             <line x1="5" y1="12" x2="19" y2="12"></line>

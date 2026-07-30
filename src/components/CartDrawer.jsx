@@ -28,7 +28,7 @@ const CartDrawer = () => {
       <div className={`cart-drawer ${isCartOpen ? 'open' : ''}`}>
         <div className="cart-header">
           <h2>Your Cart</h2>
-          <button className="close-btn" onClick={() => setIsCartOpen(false)}>
+          <button className="close-btn" onClick={() => setIsCartOpen(false)} aria-label="Close cart">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <line x1="18" y1="6" x2="6" y2="18"></line>
               <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -63,18 +63,18 @@ const CartDrawer = () => {
               {cartItems.map((item) => (
                 <div className="cart-item" key={item.id}>
                   <div className="cart-item-img">
-                    <img src={item.image} alt={item.name} />
+                    <img src={item.image} alt={item.name} width="100" height="100" />
                   </div>
                   <div className="cart-item-info">
                     <h4>{item.name}</h4>
                     <span className="cart-item-price">{item.price}</span>
                     <div className="quantity-controls">
-                      <button onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</button>
+                      <button onClick={() => updateQuantity(item.id, item.quantity - 1)} aria-label="Decrease quantity">-</button>
                       <span>{item.quantity}</span>
-                      <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</button>
+                      <button onClick={() => updateQuantity(item.id, item.quantity + 1)} aria-label="Increase quantity">+</button>
                     </div>
                   </div>
-                  <button className="remove-btn" onClick={() => removeFromCart(item.id)}>
+                  <button className="remove-btn" onClick={() => removeFromCart(item.id)} aria-label="Remove item">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <line x1="18" y1="6" x2="6" y2="18"></line>
                       <line x1="6" y1="6" x2="18" y2="18"></line>

@@ -7,31 +7,31 @@ const PopularPicks = ({ setCurrentPage }) => {
   const items = [
     {
       id: 'c1',
-      image: '/assets/latte_1784909179484.png',
+      image: '/assets/latte_1784909179484.webp',
       name: 'Cappuccino',
       price: '₹150'
     },
     {
       id: 'c2',
-      image: '/assets/cold_brew_1784909191364.png',
+      image: '/assets/cold_brew_1784909191364.webp',
       name: 'Iced Latte',
       price: '₹180'
     },
     {
       id: 'c5',
-      image: '/assets/flat_white_1784929444560.png',
+      image: '/assets/flat_white_1784929444560.webp',
       name: 'Flat White',
       price: '₹170'
     },
     {
       id: 'd2',
-      image: '/assets/cheesecake_1784909217833.png',
+      image: '/assets/cheesecake_1784909217833.webp',
       name: 'Cheesecake',
       price: '₹220'
     },
     {
       id: 'f4',
-      image: '/assets/breakfast_croissant_1784929522475.png',
+      image: '/assets/breakfast_croissant_1784929522475.webp',
       name: 'Breakfast Croissant',
       price: '₹180'
     }
@@ -56,14 +56,14 @@ const PopularPicks = ({ setCurrentPage }) => {
             {items.map(item => (
               <div className="product-card" key={item.id}>
                 <div className="product-image">
-                  <img src={item.image} alt={item.name} />
+                  <img src={item.image} alt={item.name} width="400" height="400" loading="lazy" />
                 </div>
                 <div className="product-info">
                   <div className="product-details">
                     <h3>{item.name}</h3>
                     <span className="price">{item.price}</span>
                   </div>
-                  <button className="add-btn" onClick={() => addToCart(item)}>
+                  <button className="add-btn" onClick={() => addToCart(item)} aria-label={`Add ${item.name} to cart`}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                       <line x1="12" y1="5" x2="12" y2="19"></line>
                       <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -75,12 +75,12 @@ const PopularPicks = ({ setCurrentPage }) => {
           </div>
           
           <div className="slider-controls">
-            <button className="control-btn" onClick={() => alert('Slider functionality coming soon!')}>
+            <button className="control-btn" onClick={() => alert('Slider functionality coming soon!')} aria-label="Previous item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <polyline points="15 18 9 12 15 6"></polyline>
               </svg>
             </button>
-            <button className="control-btn" onClick={() => alert('Slider functionality coming soon!')}>
+            <button className="control-btn" onClick={() => alert('Slider functionality coming soon!')} aria-label="Next item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <polyline points="9 18 15 12 9 6"></polyline>
               </svg>

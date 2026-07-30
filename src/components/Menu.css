@@ -41,17 +41,6 @@
   font-size: 1.05rem;
 }
 
-.menu-hero-image {
-  width: 50%;
-  max-width: 500px;
-}
-
-.menu-hero-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  object-fit: cover;
-}
 
 /* Filter Tabs */
 .menu-filters {
@@ -251,8 +240,5 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  .menu-hero-image {
-    width: 100%;
-    margin-top: 2rem;
-  }
+
 }

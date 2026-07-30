@@ -9,7 +9,7 @@ const Locations = () => {
       address: 'Connaught Place, New Delhi',
       hours: 'Mon-Sun: 7am - 8pm',
       phone: '+91 11 2345 6789',
-      image: '/assets/cropped/hero.png' // Reusing hero image for now
+      image: '/assets/cropped/hero.webp' // Reusing hero image for now
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const Locations = () => {
       address: 'Hauz Khas Village, New Delhi',
       hours: 'Mon-Sun: 8am - 9pm',
       phone: '+91 11 9876 5432',
-      image: '/assets/latte_1784909179484.png' // Reusing latte image for variety
+      image: '/assets/latte_1784909179484.webp' // Reusing latte image for variety
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ const Locations = () => {
       address: 'Sundar Nursery, New Delhi',
       hours: 'Sat-Sun: 9am - 6pm (Weekends Only)',
       phone: '+91 11 8765 4321',
-      image: '/assets/mocha_1784909204523.png'
+      image: '/assets/mocha_1784909204523.webp'
     }
   ];
 
@@ -41,7 +41,7 @@ const Locations = () => {
           {locations.map(loc => (
             <div className="location-card" key={loc.id}>
               <div className="location-image">
-                <img src={loc.image} alt={loc.name} />
+                <img src={loc.image} alt={loc.name} width="600" height="400" loading="lazy" />
               </div>
               <div className="location-info">
                 <h2>{loc.name}</h2>

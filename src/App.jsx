@@ -38,7 +38,9 @@ function App() {
   return (
     <div className="app-container">
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} setIsSearchOpen={setIsSearchOpen} />
-      {renderPage()}
+      <main>
+        {renderPage()}
+      </main>
       <CartDrawer />
       <SearchOverlay isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
     </div>

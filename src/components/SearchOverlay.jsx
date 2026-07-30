@@ -60,7 +60,7 @@ const SearchOverlay = ({ isOpen, onClose }) => {
               onChange={(e) => setQuery(e.target.value)}
             />
             {query && (
-              <button className="clear-btn" onClick={() => setQuery('')}>
+              <button className="clear-btn" onClick={() => setQuery('')} aria-label="Clear search">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -83,15 +83,15 @@ const SearchOverlay = ({ isOpen, onClose }) => {
           
           {results.length > 0 && (
             <div className="results-list">
-              <h3>Search Results</h3>
+              <h2>Search Results</h2>
               {results.map(item => (
                 <div className="search-result-item" key={item.id}>
-                  <img src={item.image} alt={item.name} />
+                  <img src={item.image} alt={item.name} width="100" height="100" />
                   <div className="result-info">
-                    <h4>{item.name}</h4>
+                    <h3>{item.name}</h3>
                     <span className="result-price">{item.price}</span>
                   </div>
-                  <button className="add-btn" onClick={() => {
+                  <button className="add-btn" aria-label={`Add ${item.name} to cart`} onClick={() => {
                     addToCart(item);
                     onClose();
                   }}>

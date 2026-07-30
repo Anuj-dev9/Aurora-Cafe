@@ -9,10 +9,10 @@ const Header = ({ currentPage, setCurrentPage, setIsSearchOpen }) => {
       <div className="header-container container">
         <div className="logo" onClick={() => setCurrentPage('home')} style={{cursor: 'pointer'}}>
           <div className="logo-icon" style={{border: 'none', background: 'transparent'}}>
-             <img src="/assets/cropped/logo.png" alt="Logo" style={{height: '100%', objectFit: 'contain'}} />
+             <img src="/assets/cropped/logo.webp" alt="Logo" style={{height: '100%', objectFit: 'contain'}} width="40" height="40" />
           </div>
           <div className="logo-text">
-            <h2>AURORA</h2>
+            <h1>AURORA</h1>
             <span>CAFE</span>
           </div>
         </div>
@@ -27,13 +27,13 @@ const Header = ({ currentPage, setCurrentPage, setIsSearchOpen }) => {
         </nav>
         
         <div className="header-actions">
-          <button className="icon-btn" onClick={() => setIsSearchOpen(true)}>
+          <button className="icon-btn" onClick={() => setIsSearchOpen(true)} aria-label="Search">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
           </button>
-          <button className="icon-btn" onClick={() => setIsCartOpen(true)} style={{ position: 'relative' }}>
+          <button className="icon-btn" onClick={() => setIsCartOpen(true)} style={{ position: 'relative' }} aria-label="Cart">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
               <circle cx="12" cy="7" r="4"></circle>

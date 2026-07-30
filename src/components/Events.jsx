@@ -15,7 +15,7 @@ const Events = () => {
       time: '7:00 PM - 10:00 PM',
       title: 'Acoustic Jazz Night',
       desc: 'Join us for a relaxing evening of live acoustic jazz, featuring local trio "The Blue Notes". Specialty coffee cocktails will be served.',
-      image: '/assets/cropped/hero.png'
+      image: '/assets/cropped/hero.webp'
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const Events = () => {
       time: '10:00 AM - 12:00 PM',
       title: 'Latte Art Masterclass',
       desc: 'Learn the secrets of the perfect pour from our head barista. Limited spots available, includes all materials and tasting.',
-      image: '/assets/latte_1784909179484.png'
+      image: '/assets/latte_1784909179484.webp'
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const Events = () => {
       time: '9:00 AM - 2:00 PM',
       title: 'Winter Menu Tasting',
       desc: 'Be the first to try our new winter seasonal drinks and pastries before they officially hit the menu. Free entry with any purchase.',
-      image: '/assets/mocha_1784909204523.png'
+      image: '/assets/mocha_1784909204523.webp'
     }
   ];
 
@@ -53,7 +53,7 @@ const Events = () => {
               </div>
               
               <div className="event-image">
-                <img src={event.image} alt={event.title} />
+                <img src={event.image} alt={event.title} width="600" height="400" loading="lazy" />
               </div>
               
               <div className="event-details">

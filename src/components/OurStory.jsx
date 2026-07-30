@@ -18,11 +18,11 @@ const OurStory = () => {
             </p>
             <div className="story-stats">
               <div className="stat">
-                <h3>8+</h3>
+                <h2>8+</h2>
                 <span>Years of Excellence</span>
               </div>
               <div className="stat">
-                <h3>15</h3>
+                <h2>15</h2>
                 <span>Single Origin Beans</span>
               </div>
             </div>
@@ -30,10 +30,10 @@ const OurStory = () => {
           
           <div className="story-images">
             <div className="story-img-main">
-              <img src="/assets/cropped/hero.png" alt="Aurora Cafe Interior" />
+              <img src="/assets/cropped/hero.webp" alt="Aurora Cafe Interior" width="600" height="400" loading="lazy" />
             </div>
             <div className="story-img-secondary">
-              <img src="/assets/latte_1784909179484.png" alt="Latte Art" />
+              <img src="/assets/latte_1784909179484.webp" alt="Latte Art" width="400" height="600" loading="lazy" />
             </div>
           </div>
         </div>

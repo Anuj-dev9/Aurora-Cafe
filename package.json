@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:lighthouse": "lighthouse http://localhost:4173 --view --chrome-flags=\"--no-sandbox --headless --disable-gpu\"",
+    "test:speed": "start-server-and-test preview http://localhost:4173 test:lighthouse"
   },
   "dependencies": {
     "@use-gesture/react": "^10.3.1",
@@ -18,7 +20,9 @@
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.3",
+    "lighthouse": "^13.4.1",
     "oxlint": "^1.71.0",
+    "start-server-and-test": "^3.0.11",
     "vite": "^8.1.5"
   }
 }
