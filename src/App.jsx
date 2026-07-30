@@ -1,16 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, Suspense, lazy } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Features from './components/Features'
-import PopularPicks from './components/PopularPicks'
-import Menu from './components/Menu'
-import Locations from './components/Locations'
-import OurStory from './components/OurStory'
-import Events from './components/Events'
-import Contact from './components/Contact'
 import CartDrawer from './components/CartDrawer'
 import SearchOverlay from './components/SearchOverlay'
 import './App.css'
+
+const PopularPicks = lazy(() => import('./components/PopularPicks'))
+const Menu = lazy(() => import('./components/Menu'))
+const Locations = lazy(() => import('./components/Locations'))
+const OurStory = lazy(() => import('./components/OurStory'))
+const Events = lazy(() => import('./components/Events'))
+const Contact = lazy(() => import('./components/Contact'))
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home')
@@ -39,7 +40,9 @@ function App() {
     <div className="app-container">
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} setIsSearchOpen={setIsSearchOpen} />
       <main>
-        {renderPage()}
+        <Suspense fallback={<div style={{height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>Loading...</div>}>
+          {renderPage()}
+        </Suspense>
       </main>
       <CartDrawer />
       <SearchOverlay isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />

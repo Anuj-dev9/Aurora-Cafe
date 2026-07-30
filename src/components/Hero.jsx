@@ -31,7 +31,7 @@ const Hero = ({ setCurrentPage }) => {
           className={`hero-bg ${index === currentImageIndex ? 'active' : ''}`}
           style={{ opacity: index === currentImageIndex ? 1 : 0, transition: 'opacity 1s ease-in-out' }}
         >
-           <img src={img} alt="Aurora Cafe Interior" width="1200" height="800" />
+           <img src={img} alt="Aurora Cafe Interior" width="1200" height="800" fetchpriority="high" />
            <div className="hero-overlay"></div>
         </div>
       ))}
